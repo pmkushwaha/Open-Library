@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Login Form</title>
+    <style>
+        /* Form container styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-size: cover;
+	        background-image: url('loginBg.jpg');
+	        background-size: cover;
+	        background-position: center; 
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Form styles */
+        form {
+            background-color: #ffffff;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        /* Input styles */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+        }
+
+        /* Submit button styles */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  
+</head>
+<body>
+    <h2>User Login here</h2>
+    <form th:action="@{/user_login}" th:object="${user}" method="post">
+        <table>
+            <tr>
+                <td>UserName</td>
+                <td><input type="text" th:field="*{email}" name="email" />
+                <p th:if="${#fields.hasErrors('email')}" th:errors="${user.email}"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" th:field="*{password}" name="password" />
+                <p th:if="${#fields.hasErrors('password')}" th:errors="${user.password}"></p>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Login" />
+        
+        <a href="/">Back to home Page</a>
+    </form>
+</body>
+</html>
