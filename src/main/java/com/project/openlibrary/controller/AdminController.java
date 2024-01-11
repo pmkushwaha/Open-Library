@@ -14,6 +14,7 @@ public class AdminController {
 	@Autowired
 	AdminRepository adminRepository;
 	
+	// THis is the controller of the login page
 
 	@PostMapping("/admin_login")
 	public String userLogin(@RequestParam("username") String username, @RequestParam("password") String password) {
