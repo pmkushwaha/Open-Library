@@ -35,7 +35,11 @@ public class IndexController {
 	}
 	
 	@GetMapping("/admin")
+<<<<<<< HEAD
 	public String getAdminDashboardPage() {
+=======
+	public String getAdminDashboardPage(Admin admin) {
+>>>>>>> 86663f7 (Admin dashboard is updated)
 		return "adminDashboard";
 		
 	}

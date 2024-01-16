@@ -36,7 +36,11 @@ public class UserController {
 	}
 
 	@PostMapping("/user_login") //write @Valid for validation
+<<<<<<< HEAD
 	public String userLogin( Model model , @ModelAttribute("user") User user, BindingResult result,
+=======
+	public String userLogin( @ModelAttribute("user") User user, BindingResult result,
+>>>>>>> 86663f7 (Admin dashboard is updated)
 			@RequestParam("email") String email, @RequestParam("password") String password) {
 
 		if (result.hasErrors()) {
@@ -55,10 +59,14 @@ public class UserController {
 		// Compare the passwords
 		if (dbUser.getPassword().equals(password)) {
 			System.out.println("Email and Password Matched.");
+<<<<<<< HEAD
 			model.addAttribute("name", user.getName());
 			System.out.println(model.addAttribute("name", user.getName()) );
 			return "userDashBoard";
 			
+=======
+			return "userDashBoard";
+>>>>>>> 86663f7 (Admin dashboard is updated)
 		} else {
 			System.out.println("Email and Password Not Matched.");
 			return "userLoginPage";
@@ -82,11 +90,14 @@ public class UserController {
 
 	}
 
+<<<<<<< HEAD
 	@GetMapping("/userDashboard")
 	public String userDashboard(User user) {
 		return "userDashBoard";
 	}
 	
+=======
+>>>>>>> 86663f7 (Admin dashboard is updated)
 	@GetMapping("/userProfile")
 	public String userProfile(User user) {
 		return "userProfile";
