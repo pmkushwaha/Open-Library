@@ -12,17 +12,32 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
 	background: #fafafa;
 	
+=======
+	background: rgb(235, 235, 238);
+	background: linear-gradient(7deg, rgba(235, 235, 238, 1) 0%,
+		rgba(156, 141, 210, 1) 50%, rgba(140, 122, 204, 1) 60%,
+		rgba(132, 113, 201, 1) 65%, rgba(119, 98, 196, 1) 73%,
+		rgba(77, 46, 181, 1) 100%);
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 p {
 	font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
 	font-size: 1.1em;
 	font-weight: 300;
 	line-height: 1.7em;
 	/*color: #999;*/
 	color: blue;
+=======
+	font-size: 2.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: white;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 a, a:hover, a:focus {
@@ -33,7 +48,11 @@ a, a:hover, a:focus {
 
 .navbar {
 	padding: 15px 10px;
+<<<<<<< HEAD
 	background: #fff;
+=======
+	background: #011155;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 	border: none;
 	border-radius: 0;
 	margin-bottom: 40px;
@@ -58,7 +77,11 @@ a, a:hover, a:focus {
 #sidebar {
 	min-width: 250px;
 	max-width: 250px;
+<<<<<<< HEAD
 	background: #7386D5;
+=======
+	background: #4d2eb5;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 	color: #fff;
 	transition: all 0.3s;
 }
@@ -67,14 +90,27 @@ a, a:hover, a:focus {
 	margin-left: -250px;
 }
 
+<<<<<<< HEAD
 #sidebar .sidebar-header {
 	padding: 20px;
 	background: #6d7fcc;
+=======
+#sidebar.active :hover {
+	background-color: black;
+}
+
+#sidebar .sidebar-header {
+	padding: 20px;
+	background: #4d2eb5;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 #sidebar ul.components {
 	padding: 20px 0;
+<<<<<<< HEAD
 	border-bottom: 1px solid #47748b;
+=======
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 #sidebar ul p {
@@ -89,6 +125,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a:hover {
+<<<<<<< HEAD
 	color: #7386D5;
 	background: #fff;
 }
@@ -96,6 +133,19 @@ a, a:hover, a:focus {
 #sidebar ul li.active>a, a[aria-expanded="true"] {
 	color: #fff;
 	background: #6d7fcc;
+=======
+	color: #1A1617;
+	background: #fff;
+}
+
+li {
+	text-decoration: none;
+}
+
+#sidebar ul li.a[aria-expanded="true"] {
+	color: #fff;
+	background: #4d2eb5;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 a[data-toggle="collapse"] {
@@ -126,6 +176,13 @@ ul ul a {
 	transition: all 0.3s;
 }
 
+<<<<<<< HEAD
+=======
+#content nav {
+	background-color: #4d2eb5;
+}
+
+>>>>>>> 86663f7 (Admin dashboard is updated)
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -148,7 +205,11 @@ ul ul a {
 
 .navbar {
 	padding: 7px 9px;
+<<<<<<< HEAD
 	background: #be2f2f;
+=======
+	background: #011155;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 	border: none;
 	border-radius: 0;
 	margin-bottom: 35px;
@@ -157,4 +218,37 @@ ul ul a {
 #logo {
 	height: 10vh;
 	width: 50vh;
+<<<<<<< HEAD
+=======
+}
+
+.card-header {
+	background-color: #4d2eb5;
+}
+
+.card-body {
+	background-color: #756AB6;
+}
+
+.card-body:hover {
+	background: rgb(235, 235, 238);
+	background: linear-gradient(7deg, rgba(235, 235, 238, 1) 0%,
+		rgba(156, 141, 210, 1) 50%, rgba(140, 122, 204, 1) 60%,
+		rgba(132, 113, 201, 1) 65%, rgba(119, 98, 196, 1) 73%,
+		rgba(77, 46, 181, 1) 100%);
+}
+
+.card-body .btn:hover {
+	border: none;
+	 
+	background: rgb(235, 235, 238); background : linear-gradient( 7deg,
+	rgba( 235, 235, 238, 1) 0%, rgba( 156, 141, 210, 1) 50%, rgba( 140, 122
+	, 204, 1) 60%, rgba( 132, 113, 201, 1) 65%, rgba( 119, 98, 196, 1) 73%,
+	rgba( 77, 46, 181, 1) 100%);
+	transform: translateX(10px);
+	background: linear-gradient(7deg, rgba(235, 235, 238, 1) 0%,
+		rgba(156, 141, 210, 1) 50%, rgba(140, 122, 204, 1) 60%,
+		rgba(132, 113, 201, 1) 65%, rgba(119, 98, 196, 1) 73%,
+		rgba(77, 46, 181, 1) 100%);
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }

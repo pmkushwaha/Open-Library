@@ -20,7 +20,12 @@
 <title>User Dashboard</title>
 
 <!-- footer -->
+<<<<<<< HEAD
 
+=======
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+>>>>>>> 86663f7 (Admin dashboard is updated)
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -40,10 +45,13 @@ body, code, dd, div, dl, dt, fieldset, form, input, legend, li, ol, pre,
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 ul, ol {
 	list-style: none; /* Remove default list-style (bullet/number) */
 }
 
+=======
+>>>>>>> 86663f7 (Admin dashboard is updated)
 user agent stylesheet
 div {
 	display: block;
@@ -140,9 +148,14 @@ footer {
 
 /*  /* Align photo to the right side */
 .navbar-brand img {
+<<<<<<< HEAD
 	width: 60px; /* Adjust the width of your photo */
 	height: 60px; /* Adjust the height of your photo */
 	border-radius: 10%;
+=======
+	width: 40px; /* Adjust the width of your photo */
+	height: 40px; /* Adjust the height of your photo */
+>>>>>>> 86663f7 (Admin dashboard is updated)
 }
 
 /* Remove hover effect on navbar-brand */
@@ -207,6 +220,10 @@ footer {
 	background-color: #3e8e41;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 86663f7 (Admin dashboard is updated)
 #navbar-brand {
 	width: 60px; /* Adjust the width of your photo */
 	height: 60px; /* Adjust the height of your photo */
@@ -216,11 +233,18 @@ footer {
 </head>
 <body>
 	<div class="parent">
+<<<<<<< HEAD
 		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary"
 			id="topnav">
 			<div class="container-fluid  justify-content-center">
 				<a class="navbar-brand" href="/userDashboard"> <img
 					th:src="@{/image/blacklogo.gif}"></a>
+=======
+		<nav class="navbar navbar-expand-lg bg-body-tertiary " id="topnav">
+			<div class="container-fluid">
+				<a class="navbar-brand me-3 " href="#"> <img
+					th:src="@{/image/blacklogo.gif}" width="70" height="70"></a>
+>>>>>>> 86663f7 (Admin dashboard is updated)
 				<button class="navbar-toggler" type="button"
 					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -229,6 +253,7 @@ footer {
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+<<<<<<< HEAD
 						<li class="nav-item "><a class="nav-link active"
 							aria-current="page" th:href="@{/userDashboard}">Home</a></li>
 						<li class="nav-item "><a class="nav-link" href="#">About</a></li>
@@ -244,11 +269,41 @@ footer {
 						<img id="navbar-brand" th:src="@{/image/man.png}">
 						<div class="dropdown-content">
 							<a href="#">profile</a> <a href="/userProfile">Update profile</a> <a href="/index">Log out</a>
+=======
+						<li class="nav-item me-3 "><a class="nav-link active"
+							aria-current="page" href="#">Home</a></li>
+						<li class="nav-item me-3 "><a class="nav-link"
+							href="#aboutUs">About</a></li>
+						<li class="nav-item me-3 "><a class="nav-link"
+							href="#feedback">Feedback</a></li>
+
+						<li id="email" class="nav-item me-7"><a class="nav-link"
+							href="#" th:text="${user.email}"></a></li>
+
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-1" type="search"
+							placeholder="Search books" aria-label="Search">
+						<button class="btn btn-outline-success  me-5" type="submit">Search</button>
+					</form>
+
+					
+					<div class="dropdown me-5">
+						<img id="navbar-brand" th:src="@{/image/man.png}">
+						<div class="dropdown-content ">
+							<a href="#">profile</a>
+							 <a href="/userProfile">Update profile</a> 
+							 <a href="/index">Log out</a>
+>>>>>>> 86663f7 (Admin dashboard is updated)
 						</div> 
 
 					</div>
 				</div>
+<<<<<<< HEAD
 				</div>
+=======
+			</div>
+>>>>>>> 86663f7 (Admin dashboard is updated)
 		</nav>
 
 
@@ -258,9 +313,13 @@ footer {
 			<div class="card-img-overlay">
 				<blockquote class="blockquote">
 
+<<<<<<< HEAD
 					<h1 class="display-4 mt-0">
 						welcome !<span th:text="${name}"></span>
 					</h1>
+=======
+					<h1 class="display-4 mt-0">welcome !</h1>
+>>>>>>> 86663f7 (Admin dashboard is updated)
 					<h2></h2>
 
 					<h4 class="display-4 ">“The more that you read, the more
@@ -599,14 +658,50 @@ footer {
 	<!-- </div> -->
 
 
+<<<<<<< HEAD
+=======
+	<!--  about section-->
+	<div class="about">
+		<section id="aboutUs" class="container">
+			<img src="/image/z.jpg" alt="user">
+			<div class="content">
+				<h2>About Us</h2>
+				<div class="content ">
+					<h3>Welcome to Our Free Online"OPEN LIBRARY"</h3>
+					<p>we are dedicated to fostering a love for literature and
+						providing a gateway to the world of knowledge. Our free online
+						library is a treasure trove of literary wonders, offering a
+						diverse collection of books, articles, and resources accessible to
+						everyone, without any cost.</p>
+
+					<p>What Sets Us Apart: Extensive Collection: Immerse yourself
+						in our vast collection covering a wide array of genres, from
+						classic literature to contemporary works. Whether you're a
+						student, a book enthusiast, or someone seeking information, we
+						have something for everyone. Free Access: Our commitment to
+						promoting literacy and education is reflected in our decision to
+						provide free access to our entire library. No subscriptions, no
+						fees – just open access to a world of stories and information.</p>
+					<a th:href="@{/userDashboard}" class="btn">learn more</a>
+				</div>
+
+
+			</div>
+		</section>
+	</div>
+	<!--  about section-->
+>>>>>>> 86663f7 (Admin dashboard is updated)
 
 
 
 	<!--my slider end  -->
 	<!--  footer -->
 
+<<<<<<< HEAD
 	<br>
 	<br>
+=======
+>>>>>>> 86663f7 (Admin dashboard is updated)
 	<footer>
 		<div class="container">
 			<div class="social-icons">

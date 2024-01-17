@@ -5,6 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+<<<<<<< HEAD
+=======
+import jakarta.persistence.OneToMany;
+>>>>>>> 86663f7 (Admin dashboard is updated)
 import jakarta.persistence.Table;
 
 @Entity
